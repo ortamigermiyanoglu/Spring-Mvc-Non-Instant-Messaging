@@ -19,7 +19,7 @@ public class HibernateConfigurations {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan("com.sumutella.departmentcrud");
+        sessionFactory.setPackagesToScan("com.sumutella.noninstantmessaging");
         sessionFactory.setHibernateProperties(hibernateProperties());
  
         return sessionFactory;

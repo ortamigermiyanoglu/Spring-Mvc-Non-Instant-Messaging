@@ -9,7 +9,7 @@ import java.sql.Date;
  * @since 11/21/2019, Thu
  */
 @Entity
-@Table(name = "messages")
+@Table(name = "MESSAGES")
 public class Message {
 
     @Id

@@ -10,7 +10,7 @@ import java.util.List;
  * @since 11/21/2019, Thu
  */
 @Entity
-@Table(name = "profiles")
+@Table(name = "PROFILES")
 public class User {
 
     @Id
@@ -23,6 +23,10 @@ public class User {
     private String fullname;
     @Column(name = "src_image")
     private String imageSource;
+
+    private String about;
+    private String university;
+
     @Column(name = "new_message")
     private int newMessage;
 
@@ -88,5 +92,22 @@ public class User {
 
     public void setMessages(List<Message> messages) {
         this.messages = messages;
+    }
+
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
+
+    public String getUniversity() {
+        return university;
+    }
+
+    public void setUniversity(String university) {
+        this.university = university;
     }
 }

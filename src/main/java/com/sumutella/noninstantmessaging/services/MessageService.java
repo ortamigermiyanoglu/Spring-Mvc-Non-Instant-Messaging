@@ -15,11 +15,11 @@ import org.springframework.transaction.annotation.Transactional;
 public class MessageService implements MessageServiceI {
 
     @Autowired
-    private MessageDao messageDao;
+    private MessageDao messageDaoImpl;
 
     @Transactional
     @Override
     public Message getMessage(int id) {
-        return messageDao.getMessage(id);
+        return messageDaoImpl.getMessage(id);
     }
 }

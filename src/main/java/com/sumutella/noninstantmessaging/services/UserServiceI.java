@@ -1,6 +1,9 @@
 package com.sumutella.noninstantmessaging.services;
 
+import com.sumutella.noninstantmessaging.entities.Message;
 import com.sumutella.noninstantmessaging.entities.User;
+
+import java.util.List;
 
 /**
  * @author sumutella
@@ -8,5 +11,6 @@ import com.sumutella.noninstantmessaging.entities.User;
  * @since 11/21/2019, Thu
  */
 public interface UserServiceI {
-    User getUser(int id);
+    User getUser(String username);
+    List<Message> getMessages(User user);
 }
